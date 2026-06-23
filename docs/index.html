@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Options Swing Tracker is a macOS Ubersicht widget for options-implied expected moves around stock catalysts.">
+    <title>Options Swing Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">macOS Ubersicht widget</p>
+          <h1>Options Swing Tracker</h1>
+          <p class="lede">
+            A local desktop widget for checking what the options market is pricing around earnings,
+            product launches, legal decisions, and other catalyst dates.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/dluttz/OptionsSwingTracker.widget">Download on GitHub</a>
+            <a class="button" href="#method">How it works</a>
+          </div>
+          <div class="trust-row">
+            <span>Local first</span>
+            <span>No account</span>
+            <span>Yahoo/yfinance data</span>
+          </div>
+        </div>
+        <div class="widget-preview" aria-label="Widget preview">
+          <div class="preview-head">
+            <div>
+              <strong>Options Swing Tracker</strong>
+              <span>catalyst swing monitor</span>
+            </div>
+            <span class="market">market open</span>
+          </div>
+          <div class="preview-row">
+            <div><strong>ORCL</strong><span>$184.29</span></div>
+            <div><b>+/- 3.3%</b><span>Live mid</span></div>
+            <div><strong>06/18</strong><span>exp 06/26</span></div>
+          </div>
+          <div class="preview-row">
+            <div><strong>COIN</strong><span>$163.26</span></div>
+            <div><b>+/- 4.2%</b><span>Indicative</span></div>
+            <div><strong>06/18</strong><span>exp 06/26</span></div>
+          </div>
+          <div class="preview-row">
+            <div><strong>NBIS</strong><span>$286.69</span></div>
+            <div><b>+/- 6.5%</b><span>Prior close</span></div>
+            <div><strong>06/18</strong><span>exp 06/26</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <div>
+          <p class="eyebrow">promo video</p>
+          <h2>See the workflow in 30 seconds.</h2>
+          <p>
+            Add a ticker, type the catalyst, choose the reaction date, and keep a small desktop read on
+            the priced move and data quality.
+          </p>
+        </div>
+        <video controls poster="./assets/promo-poster.png" src="./assets/promo.mp4"></video>
+      </section>
+
+      <section id="method" class="grid">
+        <article>
+          <h3>What it answers</h3>
+          <p>How much move is priced into the options chain around this event date?</p>
+        </article>
+        <article>
+          <h3>How it calculates</h3>
+          <p>It preserves the ATM straddle expected move math from the original Python script, including raw and 0.85 adjusted reads.</p>
+        </article>
+        <article>
+          <h3>Why it is careful</h3>
+          <p>Rows show quote basis, stale data, placeholder IV, padded expiries, and unreliable odds instead of hiding uncertainty.</p>
+        </article>
+      </section>
+
+      <section class="features">
+        <h2>Built for fast catalyst checks</h2>
+        <ul>
+          <li>Editable watchlist from the widget itself.</li>
+          <li>Manual catalyst date entry for earnings, legal events, product launches, and binary events.</li>
+          <li>Live mid, prior close, indicative, cached, and stale quote states.</li>
+          <li>Optional risk-neutral below/above odds for a price threshold.</li>
+          <li>Minimal and details modes, themes, and movable/resizable panel controls.</li>
+          <li>Local venv setup, tests, parity checks, and a doctor command.</li>
+        </ul>
+      </section>
+
+      <section class="install">
+        <h2>Install</h2>
+        <pre><code>cd "$HOME/Desktop"
+git clone https://github.com/dluttz/OptionsSwingTracker.widget.git
+cd "$HOME/Desktop/OptionsSwingTracker.widget"
+./bin/setup.sh</code></pre>
+        <p class="note">
+          Requires macOS, Ubersicht, Python 3, and internet access for Yahoo/yfinance data.
+          Informational only. Not financial advice.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -6,6 +6,8 @@ The widget is a glanceable gut-check tool. It is not an execution feed, not a tr
 
 This project is for informational and educational use only. It is not financial advice.
 
+Website: [https://dluttz.github.io/OptionsSwingTracker.widget/](https://dluttz.github.io/OptionsSwingTracker.widget/)
+
 ## Setup
 
 Install [Übersicht](https://tracesof.net/uebersicht/), then clone or download this folder onto your Mac. The recommended location is your Desktop:
