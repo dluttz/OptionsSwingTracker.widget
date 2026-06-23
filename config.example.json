@@ -1,0 +1,24 @@
+{
+  "defaults": {
+    "fetch_timeout_seconds": 20,
+    "max_workers": 6,
+    "min_valid_iv": 0.05,
+    "skew_pct": 0.05
+  },
+  "display": {
+    "cache_ttl_seconds": 300,
+    "compact": true,
+    "position": {
+      "left": "28px",
+      "top": "185px",
+      "width": "420px"
+    },
+    "refresh_seconds": 60,
+    "theme": "graphite",
+    "title": "Options Swing Tracker"
+  },
+  "runtime": {
+    "root": ""
+  },
+  "watchlist": []
+}
